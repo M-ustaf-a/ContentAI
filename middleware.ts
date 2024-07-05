@@ -6,7 +6,6 @@ export default clerkMiddleware((auth, req) => {
 
 const isProtectedRoute = createRouteMatcher([
     '/dashboard(.*)',
-    '/',
   ]);
 export const config = {
   // The following matcher runs middleware on all routes

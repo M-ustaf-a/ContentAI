@@ -5,7 +5,7 @@ import OutputSection from '../_components/OutputSection'
 import { TEMPLATE } from '../../_components/TemplateListSection'
 import Templates from '@/app/(data)/Templates'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+// import { Button } from '@/components/ui/button'
 import { ArrowLeft } from 'lucide-react'
 import { chatSession } from '@/utils/AiModal'
 import { db } from '@/utils/db'
@@ -43,15 +43,38 @@ function CreateContent(props:PROPS) {
       await SaveInDb(JSON.stringify(formData),selectedTemplate?.slug,result?.response.text())
       setLoading(false);
     }  
-    const SaveInDb = async(formData:any,slug:any,aiResp:string)=>{
+    // const SaveInDb = async(formData:any,slug:any,aiResp:string)=>{
+    //   const result=await db.insert(AIOutput).values({
+    //     formData:formData,
+    //     templateSlug:slug,
+    //     aiResponse:aiResp,
+    //     createdBy:user?.primaryEmailAddress?.emailAddress,
+    //     createdAt:moment().format('DD/MM/yyyy'),
+    // });
+
+    // console.log(result);
+    // }
+    const SaveInDb = async (formData: any, slug: any, aiResp: string) => {
+      // Ensure required fields are defined
+      const createdBy = user?.primaryEmailAddress?.emailAddress;
+      const createdAt = moment().format('DD/MM/yyyy');
+    
+      if (!formData || !slug || !aiResp || !createdBy) {
+        console.error('One or more required fields are undefined');
+        return;
+      }
+    
       const result = await db.insert(AIOutput).values({
-        formData:formData,
-        templateSlug:slug,
-        aiResponse:aiResp,
-        createdBy:user?.primaryEmailAddress?.emailAddress,
-        createdAt:moment().format('DD/MM/YYYY'),
-      })
+        formData: formData,
+        templateSlug: slug,
+        aiResponse: aiResp,
+        createdBy: createdBy,
+        createdAt: createdAt,
+      });
+    
+      console.log(result);
     }
+    
 
   return (
     <div className="p-3">

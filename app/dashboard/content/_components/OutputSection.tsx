@@ -24,7 +24,6 @@ function OutputSection({aiOutput}:props) {
       <Editor
         ref={editorRef}
         initialValue="Your result will appear here!"
-        previewStyle="vertical"
         height="440px"
         initialEditType="markdown"
         useCommandShortcut={true}

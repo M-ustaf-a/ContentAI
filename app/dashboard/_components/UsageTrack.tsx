@@ -13,7 +13,7 @@ import { TotalUsageContext } from '@/app/(context)/TotalUsageContext';
 function UsageTrack() {
     const {user} = useUser();
     const {totalUsage, setTotalUsage} = useContext(TotalUsageContext)
-    const result= db.select().from(AIOutput).where(eq(AIOutput.createdBy,user?.primaryEmailAddress?.emailAddress));
+    
     
     useEffect(()=>{
         user&&GetData();

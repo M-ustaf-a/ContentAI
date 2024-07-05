@@ -46,7 +46,7 @@ export default function Home() {
     
     <div className="mt-5 max-w-2xl text-center mx-auto">
       <h1 className="block font-bold text-black text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
-      <span className="bg-clip-text bg-gradient-to-tl from-gray-500 to-violet-600 text-transparent"> ContentAI</span>
+      ContentAI
       </h1>
     </div>
    

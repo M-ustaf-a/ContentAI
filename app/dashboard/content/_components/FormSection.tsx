@@ -28,7 +28,7 @@ function FormSection({ selectedTemplates, userFormInput, loading }: PROPS) {
   };
 
   return (
-    <div className="p-5 shadow-md border rounded-lg bg-white">
+    <div className="p-5 shadow-md border rounded-lg bg-white sm:w-full">
       {selectedTemplates?.icon && (
         <Image
           src={selectedTemplates.icon}

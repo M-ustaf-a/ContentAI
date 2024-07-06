@@ -9,6 +9,9 @@ const inter = Outfit({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "ContentAI",
   description: "",
+  icons: {
+    icon: "./logo.svg",
+  },
 };
 
 export default function RootLayout({

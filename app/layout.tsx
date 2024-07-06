@@ -8,7 +8,7 @@ const inter = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ContentAI",
-  description: "",
+  description: "Revolutionize your content creation with our AI-powered app, delivering engaging and high-quality text in seconds.",
   icons: {
     icon: "./logo.svg",
   },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode; 
 }>) {
   return (
     <ClerkProvider>

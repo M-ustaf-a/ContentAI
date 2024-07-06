@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 function SideNav(){
 
-    const MenuList=[
+    const MenuList=[ 
         {
             name:'Home',
             icon: Home,
@@ -32,10 +32,10 @@ function SideNav(){
         
     ]
 
-    const path = usePathname();
-    useEffect(()=>{
+    const Path = usePathname();
+    // useEffect(()=>{
         // console.log(path)
-    },[])
+    // },[])
   return (
     <div className='h-screen relative p-5 shadow-sm border'>
         <div className="flex justify-center">
@@ -43,12 +43,12 @@ function SideNav(){
         </div>
         <hr className='my-6 border'/>
         <div className='mt-3'>
-        {MenuList.map((menu,index)=>(
+        {MenuList.map((menu)=>(
                 <Link href={menu.path}>
                     <div className={`flex gap-2 mb-2 p-3
                     hover:bg-primary hover:text-white rounded-lg
                     cursor-pointer items-center
-                    ${path==menu.path&&'bg-primary text-white'}
+                    ${Path==menu.path&&'bg-primary text-white'}
                     `}>
                         <menu.icon className='h-6 w-6'/>
                         <h2 className='text-lg'>{menu.name}</h2>

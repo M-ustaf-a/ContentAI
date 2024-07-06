@@ -34,7 +34,7 @@ function SideNav(){
 
     const path = usePathname();
     useEffect(()=>{
-        console.log(path)
+        // console.log(path)
     },[])
   return (
     <div className='h-screen relative p-5 shadow-sm border'>

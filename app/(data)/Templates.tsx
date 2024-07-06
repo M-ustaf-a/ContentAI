@@ -1,5 +1,61 @@
 export default  [
     {
+        name: 'Code Bug Detector',
+        desc: 'This tool analyzes your input, like error messages and code snippets, to pinpoint and fix bugs, offering detailed solutions and alternatives in a straightforward, user-friendly way.',
+        icon:'https://cdn-icons-png.flaticon.com/128/5683/5683743.png',
+        category: 'code-bug-detector',
+       
+        slug: 'code-bug-detector',
+        aiPrompt: 'Depends on user codeInput find bug in code and give solution and give output in  in rich text editor format in code block ',
+        form: [
+            {
+                label: 'Enter code which you want to test bug',
+                field: 'textarea',
+                name: 'codeInput',
+                required:true
+            },
+           
+        ]
+    },
+    {
+        name: 'Explain Code',
+        desc: 'AI Model to explain programming code in any language',
+        icon:'https://cdn-icons-png.flaticon.com/128/9762/9762173.png',
+        category: 'Coding',
+       
+        slug: 'explain-code',
+        aiPrompt: 'Depends on user codeDescription explain code line by line and give output in  in rich text editor format in code block ',
+        form: [
+            {
+                label: 'Enter code which you want to understand',
+                field: 'textarea',
+                name: 'codeDesscripton',
+                required:true
+            },
+           
+        ]
+    },
+    {
+        name: 'Write Code',
+        desc: 'AI Model to generate programming code in any language',
+        icon:'https://cdn-icons-png.flaticon.com/128/10539/10539321.png',
+        category: 'Coding',
+       
+        slug: 'write-code',
+        aiPrompt: 'Depends on user codeDescription write a code and give output in  in rich text editor format in code block ',
+        form: [
+            {
+                label: 'Enter description of code you want along with Programming Lang',
+                field: 'textarea',
+                name: 'codeDesscripton',
+                required:true
+            },
+           
+        ]
+    },
+    
+    
+    {
         name:'Blog Title',
         desc:'An AI tool that generate blog title depends on yout blog information',
         category:'Blog',
@@ -48,7 +104,7 @@ export default  [
         category: 'Blog',
         icon: 'https://cdn-icons-png.flaticon.com/128/8733/8733545.png',
         slug: 'blog-topic-idea',
-        aiPrompt: 'Generate top 10 Blog Topic Ideas in bullet point only, (no Description) based on niche in rich text editor format',
+        aiPrompt: 'Generate top 20 Blog Topic Ideas in bullet point only, (no Description) based on niche in rich text editor format',
         form: [
             {
                 label: 'Enter your Niche',
@@ -64,7 +120,7 @@ export default  [
         category: 'Youtube Tools',
         icon: 'https://cdn-icons-png.flaticon.com/128/11817/11817766.png',
         slug: 'youtube-seo-title',
-        aiPrompt: 'Give me Best SEO optimized high ranked 5 title ideas bullet wise only bases on keywords and outline and give me result in HTML tags format',
+        aiPrompt: 'Give me Best SEO optimized high ranked 10 title ideas bullet wise only bases on keywords and outline and give me result in HTML tags format',
         form: [
             {
                 label: 'Enter your youtube video topic keyowords',
@@ -109,7 +165,7 @@ export default  [
         icon: 'https://cdn-icons-png.flaticon.com/128/5764/5764721.png',
         slug: 'youtube-tag',
 
-        aiPrompt: 'Generate 10 Youtube tags in bullet point based on title and outline in rich text editor format',
+        aiPrompt: 'Generate 15 Youtube tags in bullet point based on title and outline in rich text editor format',
 
         form: [
             {
@@ -240,60 +296,6 @@ export default  [
                 label: 'Enter text to correct the grammer',
                 field: 'input',
                 name: 'inputText',
-                required:true
-            },
-           
-        ]
-    },
-    {
-        name: 'Write Code',
-        desc: 'AI Model to generate programming code in any language',
-        icon:'https://cdn-icons-png.flaticon.com/128/10539/10539321.png',
-        category: 'Coding',
-       
-        slug: 'write-code',
-        aiPrompt: 'Depends on user codeDescription write a code and give output in  in rich text editor format in code block ',
-        form: [
-            {
-                label: 'Enter description of code you want along with Programming Lang',
-                field: 'textarea',
-                name: 'codeDesscripton',
-                required:true
-            },
-           
-        ]
-    },
-    {
-        name: 'Explain Code',
-        desc: 'AI Model to explain programming code in any language',
-        icon:'https://cdn-icons-png.flaticon.com/128/9762/9762173.png',
-        category: 'Coding',
-       
-        slug: 'explain-code',
-        aiPrompt: 'Depends on user codeDescription explain code line by line and give output in  in rich text editor format in code block ',
-        form: [
-            {
-                label: 'Enter code which you want to understand',
-                field: 'textarea',
-                name: 'codeDesscripton',
-                required:true
-            },
-           
-        ]
-    },
-    {
-        name: 'Code Bug Detector',
-        desc: 'This tool analyzes your input, like error messages and code snippets, to pinpoint and fix bugs, offering detailed solutions and alternatives in a straightforward, user-friendly way.',
-        icon:'https://cdn-icons-png.flaticon.com/128/5683/5683743.png',
-        category: 'code-bug-detector',
-       
-        slug: 'code-bug-detector',
-        aiPrompt: 'Depends on user codeInput find bug in code and give solution and give output in  in rich text editor format in code block ',
-        form: [
-            {
-                label: 'Enter code which you want to test bug',
-                field: 'textarea',
-                name: 'codeInput',
                 required:true
             },
            

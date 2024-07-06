@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div className="p-5 shadow-sm flex justify-between">
-      <div className="flex gap-2 items-center p-2 rounded-md max-w-md">
+      <div className="flex gap-1 items-center p-2 rounded-md max-w-md">
         <Search />
         <input
           type="text"

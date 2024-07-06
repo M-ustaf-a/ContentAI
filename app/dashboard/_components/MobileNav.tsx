@@ -13,6 +13,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import DeblurIcon from '@mui/icons-material/Deblur';
 import { UserButton } from "@clerk/nextjs";
+import Image from "next/image";
 
 
 function MobileNav() {
@@ -50,7 +51,8 @@ useEffect(()=>{
     <div>
       <Sheet>
         <SheetTrigger>
-           <DeblurIcon/>
+           {/* <DeblurIcon/> */}
+           <Image src="/logo.svg" alt="toggle" width={30} height={30} className="ml-3 mt-3"/>
           </SheetTrigger>
         <SheetContent>
           <SheetClose asChild>

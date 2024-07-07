@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { UserButton } from "@clerk/nextjs";
 import { Search } from "lucide-react";
 import React, { useEffect, useState } from "react";
+// import SearchBar from "./SearchBar";
 
 const Header = () => {
   const [isClient, setIsClient] = useState(false);
@@ -10,6 +11,7 @@ const Header = () => {
     setIsClient(true);
   }, []);
 
+  
   return (
     <div className="p-5 shadow-sm flex justify-between">
       <div className="flex gap-1 items-center p-2 rounded-md max-w-md">
@@ -19,6 +21,10 @@ const Header = () => {
           placeholder="Search.."
           className="outline-none bg-transparent"
         />
+        {/* <SearchBar userInput={function ( data: any ): void {
+         
+        } } loading={false}/> */}
+        
       </div>
       <div className="flex gap-5 items-center">
         {/* <h1 className='bg-black p-5 rounded-md text-xs text-white px-4 cursor-pointer '>Join Membership just for $9.99/Month</h1> */}

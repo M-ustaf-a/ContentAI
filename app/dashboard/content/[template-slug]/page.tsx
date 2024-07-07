@@ -12,7 +12,7 @@ import { db } from '@/utils/db'
 import { AIOutput } from '@/utils/schema'
 import { useUser } from '@clerk/nextjs'
 import moment from 'moment'
-import { TotalUsageContext } from '@/app/(context)/TotalUsageContext'
+// import { TotalUsageContext } from '@/app/(context)/TotalUsageContext'
 import { useRouter } from 'next/navigation'
 
 interface PROPS{
@@ -27,13 +27,13 @@ function CreateContent(props:PROPS) {
   const [aiOutput, setAiOutput] = useState<string>('')
   const {user} = useUser();
   const router = useRouter();
-  const {totalUsage,setTotalUsage} = useContext(TotalUsageContext);
+  // const {totalUsage,setTotalUsage} = useContext(TotalUsageContext);
 
     const GenerateAIContent = async(formData:any)=>{
-      if(totalUsage>=10000){
-         router.push('/dashboard/billing')
-        return;
-      }
+      // if(totalUsage>=10000){
+      //    router.push('/dashboard/billing')
+      //   return;
+      // }
       setLoading(true);
       const SelectedPrompt=selectedTemplate?.aiPrompt;
       const FinalAIPrompt=JSON.stringify(formData)+", "+SelectedPrompt;

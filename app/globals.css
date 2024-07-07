@@ -93,12 +93,12 @@
       @apply bg-black;
     } */
     .gsc-search-button .gsc-search-button-v2{
-      @apply bg-black rounded-md h-8 border-none
+      @apply bg-black rounded-md h-8 border-none max-w-md shadow-sm hidden
     }
     .gsc-search-button .gsc-search-button-v2:hover{
-      @apply bg-black
+      @apply bg-black max-w-md shadow-sm hidden
     }
     .gsc-input-box{
-     @apply rounded-md w-96
+     @apply rounded-md w-56 max-w-md  shadow-sm
     }
     

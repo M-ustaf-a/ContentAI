@@ -75,18 +75,30 @@
     }
   }
   /* Custom styles for Google Custom Search elements */
-.gsc-input-box, .gsc-input {
+/* .gsc-input-box, .gsc-input {
   @apply h-10 px-3 rounded-md border border-gray-300 outline-none text-sm;
 }
 
 .gsc-search-button {
   @apply bg-black text-white rounded-md px-4 py-2 text-sm;
 }
-
 .gsc-search-button:hover {
   @apply bg-black;
-}
-
-.gsc-control-cse {
-  @apply bg-transparent border-none;
-}
+  }
+  
+  .gsc-control-cse {
+    @apply bg-transparent border-none;
+    } */
+    /* .gsc-search-button-v2{
+      @apply bg-black;
+    } */
+    .gsc-search-button .gsc-search-button-v2{
+      @apply bg-black rounded-md h-8 border-none
+    }
+    .gsc-search-button .gsc-search-button-v2:hover{
+      @apply bg-black
+    }
+    .gsc-input-box{
+     @apply rounded-md w-96
+    }
+    

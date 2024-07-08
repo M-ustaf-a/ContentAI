@@ -53,11 +53,64 @@ export default  [
            
         ]
     },
-    
+    {
+        name: 'Twitter/X Tweets Idea',
+        desc: 'An AI tool that generate New and trending twitter idea depends on your niche',
+        icon: 'https://cdn-icons-png.flaticon.com/128/2580/2580291.png',
+        category: 'twitter',
+       
+        slug: 'twitter-post-idea-generator',
+        aiPrompt: 'Generate 5-10 twitter tweets idea depends on niche with latest trend and give output in  in rich text editor format',
+        form: [
+            {
+                label: 'Enter Keywords / Niche for your tweets idea',
+                field: 'input',
+                name: 'keywords',
+                required:true
+            },
+        ]
+    },
+
+    {
+        name: 'Twitter/X Post Generator',
+        desc: 'An AI tool that serves as your personal blog post title writer, generating catchy and viral-worthy titles in your chosen language.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/25/25660.png',
+        category: 'blog',
+       
+        slug: 'twitter-post-generator',
+        aiPrompt: 'Generate 3 Twitter post depends on a given keywords and give output in  in rich text editor format',
+        form: [
+            {
+                label: 'Enter Keywords for your post',
+                field: 'input',
+                name: 'keywords',
+                required:true
+            },
+           
+        ]
+    },
+    {
+        name: 'Twitter/X Hash Tag Generator',
+        desc: 'An AI tool that serves as your personal blog post title writer, generating catchy and viral-worthy titles in your chosen language.',
+        icon: 'https://cdn-icons-png.flaticon.com/128/2671/2671909.png',
+        category: 'blog',
+       
+        slug: 'twitter-hash-tag-generator',
+        aiPrompt: 'Generate 15 Twitter hash tag depends on a given keywords and give output in  in rich text editor format',
+        form: [
+            {
+                label: 'Enter Keywords for your twitter hastag',
+                field: 'input',
+                name: 'keywords',
+                required:true
+            },
+           
+        ]
+    },
     
     {
         name:'Blog Title',
-        desc:'An AI tool that generate blog title depends on yout blog information',
+        desc:'An AI tool that generate blog title depends on your blog information',
         category:'Blog',
         icon:'https://cdn-icons-png.flaticon.com/128/4180/4180955.png',
         aiPrompt:'Give me 5 blog topic idea in bullet wise only based on give niche & outline and give me result in Rich text editor format',
@@ -283,6 +336,7 @@ export default  [
            
         ]
     },
+    
     {
         name: 'English Grammer Check',
         desc: 'AI Model to Correct your english grammer by providing the text',

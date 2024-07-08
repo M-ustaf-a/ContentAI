@@ -99,6 +99,9 @@
       @apply bg-black max-w-md shadow-sm hidden
     }
     .gsc-input-box{
-     @apply rounded-md w-56 max-w-md  shadow-sm
+     @apply rounded-md w-56 max-w-md  shadow-sm placeholder:hidden
+    
     }
+   
+    
     

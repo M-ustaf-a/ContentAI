@@ -1,10 +1,11 @@
 "use client"
 import React, { useEffect } from 'react'
 import Image from 'next/image'
-import {FileClock, Home, Settings, WalletCards} from 'lucide-react'
+import {FileClock, Home, Settings, User2Icon, WalletCards} from 'lucide-react'
 import { usePathname } from 'next/navigation'
 // import UsageTrack from './UsageTrack'
 import Link from 'next/link'
+import { UserButton } from '@clerk/nextjs'
 
 function SideNav(){
 

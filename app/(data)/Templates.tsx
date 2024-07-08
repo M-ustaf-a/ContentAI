@@ -54,6 +54,54 @@ export default  [
         ]
     },
     {
+        name: "Generate a GitHub README",
+        desc: 'An AI tool that generate GitHub readme file',
+        icon: 'https://cdn-icons-png.flaticon.com/128/3291/3291695.png',
+        category: 'github',
+       
+        slug: 'github-readme-generator',
+        aiPrompt: 'Generate github customized readme file based on title, description and give output in rich text editor format',
+        form: [
+            {
+                label: 'Project title',
+                field: 'input',
+                name: 'keywords',
+                required:true
+            },
+            {
+                label: "Brief Description",
+                field: "textarea",
+                name: "keyowords",
+                required: true
+            }
+        ]
+
+    },
+    {
+        name: "Tax pay process",
+        desc: 'An AI tool that generate Tax pay process',
+        icon: 'https://cdn-icons-png.flaticon.com/128/1026/1026130.png',
+        category: 'Tax',
+       
+        slug: 'tax-pay-generator',
+        aiPrompt: 'Generate tax pay process based on tax name, country and give output in rich text editor format with large font',
+        form: [
+            {
+                label: 'Tax name',
+                field: 'input',
+                name: 'keywords',
+                required:true
+            },
+            {
+                label: "Country",
+                field: "input",
+                name: "keyowords",
+                required: true
+            }
+        ]
+
+    },
+    {
         name: 'Twitter/X Tweets Idea',
         desc: 'An AI tool that generate New and trending twitter idea depends on your niche',
         icon: 'https://cdn-icons-png.flaticon.com/128/2580/2580291.png',

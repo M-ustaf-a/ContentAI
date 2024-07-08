@@ -9,7 +9,7 @@ function SearchSection({onSearchInput}:any){
        <div className='w-full flex justify-center'>
           <div className='flex gap-2 items-center p-2 border rounded-md my-5 w-[50%]'>
             <Search/>
-            <input type="text" placeholder='Search' className='bg-transparent placeholder:text-cyan-300 w-full outline-none' onChange={(event)=>onSearchInput(event.target.value)}/>
+            <input type="text" placeholder='What would you like to search for?' className='bg-transparent placeholder:text-gray-400 w-full outline-none' onChange={(event)=>onSearchInput(event.target.value)}/>
           </div>
 
        </div>

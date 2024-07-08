@@ -11,7 +11,7 @@ function layout({
     children: React.ReactNode;
   }>){
 
-    const [totalUsage,setTotalUsage] = useState<Number>(0);
+    // const [totalUsage,setTotalUsage] = useState<Number>(0);
   return (
     // <TotalUsageContext.Provider value={{totalUsage,setTotalUsage}}>
     <div className='h-screen'>

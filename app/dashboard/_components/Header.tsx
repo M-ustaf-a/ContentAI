@@ -23,13 +23,14 @@ const Header = () => {
           </>
         )}
       </div>
-      {/* <div className="flex gap-5 items-center">
+      <div className="flex gap-5 items-center">
         {isClient && (
-          <div className="md:w-64 hidden md:block fixed mr-8">
-            <UserButton />
+          <div className="md:w-64 hidden md:block fixed ">
+            {/* <UserButton /> */}
           </div>
         )}
-      </div> */}
+      </div>
+
     </div>
   );
 };

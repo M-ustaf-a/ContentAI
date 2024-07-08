@@ -59,6 +59,8 @@ function SideNav(){
         </div>
         <div className='absolute bottom-10 left-0 w-full'>
             {/* <UsageTrack/> */}
+            {/* <button className="cl-userButtonPopoverActionButton cl-buttoncl-userButtonPopverActionButton_signOut cl-button_signOut 🔒️ cl-internal-1hs840h" role="menuitem" data-variant="ghost" data-color="neutral">
+            <span className="cl-userButtonPopoverActionButtonIconBox cl-userButtonPopoverActionButtonIconBox__signOut 🔒️ cl-internal-arq78v"> </span>sign out </button> */}
         </div>
     </div>
   )

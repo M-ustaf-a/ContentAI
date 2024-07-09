@@ -102,6 +102,31 @@ export default  [
 
     },
     {
+        name: "Generate excel sheet",
+        desc: 'An AI tool that generate excel sheet',
+        icon: '',
+        category: 'excel',
+       
+        slug: 'excel-sheet-generator',
+        aiPrompt: 'Generate excel sheet based on description and give output in rich text editor format with large font',
+        form: [
+            // {
+            //     label: 'Title',
+            //     field: 'input',
+            //     name: 'keywords',
+            //     required:true
+            // },
+            {
+                label: 'Input the data',
+                field: 'textarea',
+                name: 'keywords',
+                required:true
+            },
+        ]
+
+    },
+
+    {
         name: 'Twitter/X Tweets Idea',
         desc: 'An AI tool that generate New and trending twitter idea depends on your niche',
         icon: 'https://cdn-icons-png.flaticon.com/128/2580/2580291.png',

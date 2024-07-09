@@ -104,7 +104,7 @@ export default  [
     {
         name: "Generate excel sheet",
         desc: 'An AI tool that generate excel sheet',
-        icon: '',
+        icon: 'https://cdn-icons-png.flaticon.com/128/16814/16814470.png',
         category: 'excel',
        
         slug: 'excel-sheet-generator',

@@ -6,7 +6,7 @@ export default  [
         category: 'code-bug-detector',
        
         slug: 'code-bug-detector',
-        aiPrompt: 'Depends on user codeInput find bug in code and give solution and give output in  in rich text editor format in code block ',
+        aiPrompt: 'Depends on user codeInput find bug in code and give solution and process in long details and give output in  in rich text editor format in code block ',
         form: [
             {
                 label: 'Enter code which you want to test bug',

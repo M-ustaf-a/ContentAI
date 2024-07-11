@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import { UserButton } from "@clerk/nextjs";
-import { Search } from "lucide-react";
+// import { Button } from "@/components/ui/button";
+// import { UserButton } from "@clerk/nextjs";
+// import { Search } from "lucide-react";
 
 const Header = () => {
   const [isClient, setIsClient] = useState(false);

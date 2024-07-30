@@ -4,27 +4,27 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="bg-white">
-      <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 border-b w-full bg-white  text-sm py-3 sm:py-0 dark:bg-neutral-800">
+      <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 border-b w-full bg-white text-sm py-3 sm:py-0 dark:bg-neutral-800">
         <nav
-          className="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+          className="relative max-w-screen-xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
           aria-label="Global"
         >
           <div className="flex items-center justify-between">
             <div>
-              <Image src={"/logo.svg"} alt="logo" width={50} height={50} />
+              <Image src="/logo.svg" alt="Logo" width={50} height={50} />
             </div>
           </div>
           <div
             id="navbar-collapse-with-animation"
-            className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+            className="hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
           >
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-end sm:ps-7">
               <Link
                 href="/dashboard"
-                className="flex items-center gap-x-2 font-medium text-gray-400 hover:text-gray-400 sm:border-s py-2 sm:py-0 sm:ms-4 sm:my-6 sm:ps-6 dark:text-neutral-400 dark:hover:text-black-500"
+                className="flex items-center gap-x-2 font-medium text-gray-400 hover:text-gray-600 sm:border-s py-2 sm:py-0 sm:ms-4 sm:my-6 sm:ps-6 dark:text-neutral-400 dark:hover:text-neutral-300"
               >
                 <svg
-                  className="flex-shrink-0 size-4"
+                  className="w-4 h-4 flex-shrink-0"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -39,43 +39,38 @@ export default function Home() {
           </div>
         </nav>
       </header>
-      <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
+      <div className="relative overflow-hidden before:absolute before:top-0 before:left-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-10 before:-translate-x-1/2">
+        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
           <div className="mt-5 max-w-2xl text-center mx-auto">
-            <h1 className="block font-bold text-black text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
+            <h1 className="font-bold text-black text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
               ContentAI
             </h1>
           </div>
 
           <div className="mt-5 max-w-3xl text-center mx-auto">
             <p className="text-lg text-gray-600 dark:text-neutral-400">
-              Revolutionize your content creation with our AI-powered app,
-              delivering engaging and high-quality text in seconds.
+            Unlock the power of AI to create engaging, high-quality content for your website, blog, social media, and more!
             </p>
           </div>
 
-          <div className="mt-8 gap-3 flex justify-center">
+          <div className="mt-8 flex justify-center gap-3">
             <a
-              className="inline-flex justify-center items-center 
-      gap-x-3 text-center bg-black text-white text-sm font-medium rounded-md focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-4 dark:focus:ring-offset-gray-800"
+              className="inline-flex items-center justify-center gap-x-3 text-center bg-black text-white text-sm font-medium rounded-md py-3 px-4 hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-600 dark:focus:ring-offset-gray-800"
               href="/dashboard"
             >
-              Get started
+              Get Started
               <svg
-                className="flex-shrink-0 size-4"
+                className="w-6 h-6 flex-shrink-0"
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
-                <path d="m9 18 6-6-6-6" />
+                <path d="M9 18l6-6-6-6" />
               </svg>
-              
             </a>
           </div>
         </div>

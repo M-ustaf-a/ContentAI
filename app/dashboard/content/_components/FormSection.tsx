@@ -8,23 +8,31 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Loader2Icon } from "lucide-react";
 
-interface PROPS {
+// Define types for form input data
+interface FormData {
+  [key: string]: string;
+}
+
+// Define component props interface
+interface FormSectionProps {
   selectedTemplates?: TEMPLATE;
-  userFormInput: any;
+  userFormInput: (data: FormData) => void;
   loading: boolean;
 }
 
-function FormSection({ selectedTemplates, userFormInput, loading }: PROPS) {
-  const [formData, setFormData] = useState<any>({});
+function FormSection({ selectedTemplates, userFormInput, loading }: FormSectionProps) {
+  const [formData, setFormData] = useState<FormData>({});
 
-  const onSubmit = (e: any) => {
+  // Handle form submission
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     userFormInput(formData);
   };
 
-  const handleInputChange = (event: any) => {
+  // Handle input changes
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData(prevData => ({ ...prevData, [name]: value }));
   };
 
   return (
@@ -32,7 +40,7 @@ function FormSection({ selectedTemplates, userFormInput, loading }: PROPS) {
       {selectedTemplates?.icon && (
         <Image
           src={selectedTemplates.icon}
-          alt="icon"
+          alt="Template icon"
           width={70}
           height={70}
         />
@@ -49,13 +57,13 @@ function FormSection({ selectedTemplates, userFormInput, loading }: PROPS) {
             {item.field === "input" ? (
               <Input
                 name={item.name}
-                required={item?.required}
+                required={item.required}
                 onChange={handleInputChange}
               />
             ) : item.field === "textarea" ? (
               <Textarea
                 name={item.name}
-                required={item?.required}
+                required={item.required}
                 onChange={handleInputChange}
               />
             ) : null}

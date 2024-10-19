@@ -78,6 +78,15 @@ export default [
     ],
   },
   {
+    name: "Vocabulary",
+    desc: "An AI tool that generates Vocabulary",
+    icon: "https://cdn-icons-png.flaticon.com/128/10385/10385043.png",
+    category: "ssc exam",
+    slug: "vocabulary",
+    aiPrompt:
+      "Generate almost 200 vocabulary based on exam and give output in rich text editor format with large font"
+  },
+  {
     // Tool for generating tax payment processes
     name: "Tax Pay Process",
     desc: "An AI tool that generates tax pay process",

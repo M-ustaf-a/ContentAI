@@ -84,7 +84,7 @@ export default [
     category: "ssc exam",
     slug: "vocabulary",
     aiPrompt:
-      "Generate almost 200 vocabulary based on exam and give output in rich text editor format with large font",
+      "Generate almost 200 vocabulary based on exam name and give output in rich text editor format with large font",
     form: [
       {
         label: "Exam name",

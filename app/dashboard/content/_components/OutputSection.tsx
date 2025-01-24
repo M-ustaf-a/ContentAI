@@ -34,7 +34,7 @@ function OutputSection({ aiOutput }: OutputSectionProps) {
         ref={editorRef}
         initialValue="Your result will appear here!"
         height="440px"
-        initialEditType="wysiwyg"
+        initialEditType="markdown"
         useCommandShortcut={true}
       />
     </div>
